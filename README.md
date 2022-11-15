@@ -1,6 +1,6 @@
-# Project-428.P2.Saksham
+# Project-428.P3.Saksham
 
-CS 428 This repository contains the code for Project 2.
+CS 428 This repository contains the code for Project 3.
 
 This Application contains a Ramen Shop.
 
