@@ -7,6 +7,7 @@ public class ChangePosition : MonoBehaviour
     public GameObject isTarget1;
     public GameObject isTarget2;
     public GameObject isTarget3;
+    public GameObject isTargetHome;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,10 @@ public class ChangePosition : MonoBehaviour
         else if(isTarget3.activeSelf == false) {
             // UnityEditor.TransformWorldPlacementJSON:{"position":{"x":-60.900001525878909,"y":1.2999999523162842,"z":-0.5},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0}}
             transform.position = new Vector3(-60.9f, 1.4f, -0.5f);
+        }
+        else if(isTargetHome.activeSelf == false) {
+            // UnityEditor.TransformWorldPlacementJSON:{"position":{"x":-7.429999828338623,"y":-0.9574999809265137,"z":4.420000076293945},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0}}
+            transform.position = new Vector3(-7.42f, -0.957f, 4.42f);
         }
     }
 }
