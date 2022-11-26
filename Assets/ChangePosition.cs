@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+// using Tilia;//.Locomotors.Teleporter.TeleporterFacade;
 
 public class ChangePosition : MonoBehaviour
 {
     public GameObject isTarget1;
+    public GameObject teleportTarget1;
     public GameObject isTarget2;
     public GameObject isTarget3;
     public GameObject isTargetHome;
@@ -18,7 +20,10 @@ public class ChangePosition : MonoBehaviour
     void Update()
     {
         if(isTarget1.activeSelf == false) {
+            // transform.position = Vector3.MoveTowards(transform.position, isTarget1.transform.position, 1000f);
+            // teleporter.TeleporterFacade.Teleport(isTarget1.transform.position);
             transform.SetPositionAndRotation(isTarget1.transform.position, isTarget1.transform.rotation);
+            // teleportTarget1.TeleporterFacade.Teleport();
             // transform.SetPositionAndRotation(new Vector3(-26.5f, 17.4f, 33.5f), new Quaternion(0,0,0,1));
             isTarget1.SetActive(true);
         }
